@@ -6,8 +6,15 @@
       <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
       {% if site.show_downloads %}
         <section id="downloads">
-          <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
-          <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
+            
+            <p style="text-align: center; background-color: white;">
+  <a href="{{site.baseurl}}/">Home</a> |
+  <a href="{{site.baseurl}}/admin/">Admin</a> | 
+  <a href="{{site.baseurl}}/schedule/week_1/">Week 1</a> | 
+  <a href="{{site.baseurl}}/schedule/week_2/">Week 2</a> | 
+  <a href="{{site.baseurl}}/schedule/week_3/">Week 3</a> | 
+  <a href="{{site.baseurl}}/general/">Misc</a>
+</p>
         </section>
       {% endif %}
       {% include nav.html %}
